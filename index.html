@@ -13,13 +13,13 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     	<!-- Font Awesome -->
 		<link href="fontawesome/css/fontawesome.css" rel="stylesheet">
-    	<link href="fontawesome/css/solid.css" rel="stylesheet">
-    	<link href="fontawesome/css/brands.css" rel="stylesheet">
-    	<link href="fontawesome/css/v4-shims.css" rel="stylesheet">		
-    	<!-- Custom Fonts -->
-    	<link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">	
-		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    		<link href="fontawesome/css/solid.css" rel="stylesheet">
+    		<link href="fontawesome/css/brands.css" rel="stylesheet">
+    		<link href="fontawesome/css/v4-shims.css" rel="stylesheet">		
+    		<!-- Custom Fonts -->
+    		<link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">	
+		<script src="https://www.google.com/recaptcha/enterprise.js?render=6LccnG8pAAAAAFfOAITU2Qqju80b5ZIra-onPWs0"></script>
 		<style>
 			.form-group textarea {
 				transition: height 0.5s ease; /* Animacja zmiany wysokości */
@@ -606,6 +606,14 @@
 					  } 
 				}
 			</script>
+			<script>
+			  function onClick(e) {
+			    e.preventDefault();
+			    grecaptcha.enterprise.ready(async () => {
+			      const token = await grecaptcha.enterprise.execute('6LccnG8pAAAAAFfOAITU2Qqju80b5ZIra-onPWs0', {action: 'LOGIN'});
+			    });
+			  }
+			</script>							
 							
 	</body>
 </html>
