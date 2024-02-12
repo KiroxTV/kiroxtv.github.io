@@ -454,36 +454,36 @@
 								</header>
 								<p>Zapytaj o indywidualną wycenę!</p>
 
-							<!-- Kontaktowy formularz z wyłączoną opcją CAPTCHA -->
-							<form action="https://formspree.io/f/moqgdqlo" method="POST" id="contactForm" onsubmit="return validateForm()" style="width: 400px; margin: 0 auto;">
-								<div class="form-group">
-									<input type="text" id="name" name="name" placeholder="Imię" required style="width: 400px;">
-								</div>
-								<div class="form-group">
-									<input type="email" id="email" name="email" placeholder="Email" required style="width: 400px;">
-								</div>
-								<div class="form-group">
-									<select id="service" name="service" style="width: 400px;">
-										<option value="mix+mastering">Mix + Mastering</option>
-										<option value="mix">Mix</option>
-										<option value="mastering">Mastering</option>
-										<option value="inne">Inne</option>
-									</select>
-								</div>
-								<div class="form-group">
-									<textarea id="subject" name="subject" placeholder="Wpisz temat" oninput="autoResize(this)" maxlength="300" required style="width: 400px;"></textarea>
-									<span id="charCount">0/300</span>
-								</div>
-								<!-- Dodajemy tylko napis "Akceptuję warunki korzystania z serwisu" -->
-								<div class="form-group">
-									<label>Akceptuję warunki korzystania z serwisu</label>
-								</div>
-								<!-- Dodajemy pole reCAPTCHA (wyłączone na potrzeby testów) -->
-								<div class="g-recaptcha" data-sitekey="6LcbnG8pAAAAAEr-4svmW6OMmlyPAb9TPifZ4CID"></div>
-								<div class="form-group">
-									<button type="submit">Wyślij</button>
-								</div>
-							</form>
+								<!-- Kontaktowy formularz z wyłączoną opcją CAPTCHA -->
+								<form action="https://formspree.io/f/moqgdqlo" method="POST" id="contactForm" onsubmit="return validateForm()" style="width: 400px; margin: 0 auto;">
+								    <div class="form-group">
+								        <input type="text" id="name" name="name" placeholder="Imię" required style="width: 400px;">
+								    </div>
+								    <div class="form-group">
+								        <input type="email" id="email" name="email" placeholder="Email" required style="width: 400px;">
+								    </div>
+								    <div class="form-group">
+								        <select id="service" name="service" style="width: 400px;">
+								            <option value="mix+mastering">Mix + Mastering</option>
+								            <option value="mix">Mix</option>
+								            <option value="mastering">Mastering</option>
+								            <option value="inne">Inne</option>
+								        </select>
+								    </div>
+								    <div class="form-group">
+								        <textarea id="subject" name="subject" placeholder="Wpisz temat" oninput="autoResize(this)" maxlength="300" required style="width: 400px;"></textarea>
+								        <span id="charCount">0/300</span>
+								    </div>
+								    <!-- Dodajemy tylko napis "Akceptuję warunki korzystania z serwisu" -->
+								    <div class="form-group">
+								        <label>Akceptuję warunki korzystania z serwisu</label>
+								    </div>
+								    <!-- Dodajemy pole reCAPTCHA (wyłączone na potrzeby testów) -->
+								    <div class="g-recaptcha" data-sitekey="6LcbnG8pAAAAAEr-4svmW6OMmlyPAb9TPifZ4CID"></div>
+								    <div class="form-group">
+								        <button type="submit">Wyślij</button>
+								    </div>
+								</form>
 						</br>
 							<!-- Komunikat po wysłaniu formularza -->
 							<div id="successMessage" class="message">
